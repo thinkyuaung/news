@@ -34,7 +34,7 @@ For the change, think through each area and note which ones apply:
 | **Accessibility** | Roles (tablist/tab/tabpanel, alert, status), keyboard nav, focus, alt text, `aria-*` kept in sync              |
 | **Responsive**    | Pixel 7 viewport: no sideways scroll, single column, tab bar scrolls, sticky tabs                              |
 | **Security**      | Text rendered safely (no `dangerouslySetInnerHTML` with API strings), `rel="noopener"` on new-tab links        |
-| **Hosting**       | Relative asset paths and the `/bbc-news-reader/` base path still work in the built site                        |
+| **Hosting**       | Relative asset paths and the `/news/` base path still work in the built site                                   |
 | **Content rules** | Links go to bbc.com, the footer disclaimer is present                                                          |
 
 ### 3. Coverage gap analysis

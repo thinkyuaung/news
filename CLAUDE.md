@@ -11,7 +11,7 @@ The person working on this is learning web development, so:
 ## Tech and constraints
 
 - **React 19 + Vite 8**, plain JavaScript (`.js` / `.jsx`).
-- **GitHub Pages** serves the built `dist/` folder from `/bbc-news-reader/`, so `base` in `vite.config.js` must match the repo name. Import assets through Vite; never hard-code `/`-rooted paths.
+- **GitHub Pages** serves the built `dist/` folder from `/news/`, so `base` in `vite.config.js` must match the repo name. Import assets through Vite; never hard-code `/`-rooted paths.
 - **No router.** Tabs switch with React state, which avoids 404s on refresh (Pages has no server).
 - **Static hosting only:** no server and no secrets. The API needs no key.
 
@@ -67,7 +67,7 @@ Checked 2026-10-21. Re-check with the `news-categories` skill. `src/categories.j
 ## Commands
 
 ```
-npm run dev            dev server with hot reload (http://localhost:5173/bbc-news-reader/)
+npm run dev            dev server with hot reload (http://localhost:5173/news/)
 npm run build          production build → dist/
 npm run preview        serve the built site
 npm run format         prettier --write .

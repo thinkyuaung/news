@@ -17,7 +17,7 @@ Audience and length come from `$ARGUMENTS`. The default is **trainer/classmates,
 2. Tests and formatting pass:
    `npm run format:check` and `npm test`
 3. The build works: `npm run build`
-4. Find the live URL: `git remote -v` → `https://<user>.github.io/bbc-news-reader/`. If there's no remote, the demo runs locally with `npm run build && npm run preview` (http://localhost:4173/bbc-news-reader/).
+4. Find the live URL: `git remote -v` → `https://thinkyuaung.github.io/news/`. If there's no remote, the demo runs locally with `npm run build && npm run preview` (http://localhost:4173/news/).
 5. Report anything broken **before** writing the script.
 
 ## Step 2: Write the demo script

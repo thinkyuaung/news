@@ -2,7 +2,7 @@
 
 A learning project: a one-page React app that shows the latest BBC headlines by category.
 
-**Live site:** `https://<your-github-username>.github.io/bbc-news-reader/`
+**Live site:** https://thinkyuaung.github.io/news/
 
 > Unofficial learning project. Not affiliated with the BBC. All news content © BBC. Every story links to the full article on bbc.com.
 
@@ -27,7 +27,7 @@ Requires Node.js 20.19+.
 ```bash
 npm install
 npx playwright install chromium   # first time only
-npm run dev                       # http://localhost:5173/bbc-news-reader/
+npm run dev                       # http://localhost:5173/news/
 ```
 
 ## Scripts
@@ -62,7 +62,7 @@ tests/
 
 ## Deploying to GitHub Pages
 
-1. Create a GitHub repo called **`bbc-news-reader`**. If you use another name, change `base` in `vite.config.js` and `BASE_URL` in `playwright.config.js` to match.
+1. This project lives in the GitHub repo **`news`**, so the site is served from `/news/`. If you rename the repo, change `base` in `vite.config.js` and `BASE_URL` in `playwright.config.js` to match.
 2. Push this project to the `main` branch.
 3. In the repo: **Settings → Pages → Source: GitHub Actions**.
 4. Every push to `main` now runs: format check → tests → build → deploy. If a step fails, the site isn't updated.

@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 // from https://<user>.github.io/<repo-name>/ and not from the domain root.
 export default defineConfig({
   plugins: [react()],
-  base: "/bbc-news-reader/",
+  base: "/news/",
 });

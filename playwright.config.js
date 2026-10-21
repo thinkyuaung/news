@@ -2,7 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 const PORT = 4173;
 // Same sub-path as GitHub Pages (see `base` in vite.config.js).
-const BASE_URL = `http://localhost:${PORT}/bbc-news-reader/`;
+const BASE_URL = `http://localhost:${PORT}/news/`;
 
 export default defineConfig({
   testDir: "./tests/e2e",
