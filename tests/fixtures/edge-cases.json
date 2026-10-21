@@ -1,0 +1,168 @@
+{
+  "type": "page",
+  "content": {
+    "type": "indexPage",
+    "slug": "edge-cases",
+    "title": "Hand-made fixture covering every tricky case parse.js must handle",
+    "content": [
+      { "type": "advertisement", "model": { "adType": "horizontal" } },
+      {
+        "type": "collection",
+        "template": "virginia",
+        "model": {
+          "title": "",
+          "collection": { "id": "edge-first-untitled", "title": "" },
+          "contents": {
+            "data": [
+              {
+                "id": "story-article",
+                "path": "/news/articles/edge-article",
+                "type": "article",
+                "title": "Edge article with relative path",
+                "summary": "Relative paths must become full bbc.com links.",
+                "indexImage": {
+                  "model": {
+                    "blocks": {
+                      "src": "https://ichef.bbci.co.uk/news/480/edge-article.jpg",
+                      "altText": "Alt text for the edge article"
+                    }
+                  }
+                },
+                "firstPublishedAt": "2026-10-21T09:00:00.000Z",
+                "lastPublishedAt": "2026-10-21T10:00:00.000Z",
+                "readTime": 4
+              },
+              {
+                "id": "story-live",
+                "url": "https://www.bbc.com/news/live/edge-live",
+                "type": "live",
+                "title": "Edge live page with absolute url and future date",
+                "summary": "Live pages use `url` and sometimes have a date in the future.",
+                "indexImage": {
+                  "model": {
+                    "blocks": {
+                      "src": "https://ichef.bbci.co.uk/news/480/edge-live.jpg",
+                      "altText": "Alt text for the live page"
+                    }
+                  }
+                },
+                "firstPublishedAt": "2026-10-21T11:00:00.000Z",
+                "lastPublishedAt": "2028-11-22T07:48:00.000Z"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "collection",
+        "template": "ohio",
+        "model": {
+          "title": "",
+          "collection": { "id": "edge-continuation", "title": "" },
+          "contents": {
+            "data": [
+              {
+                "id": "story-no-image",
+                "path": "/news/articles/edge-no-image",
+                "type": "article",
+                "title": "Edge story without an image",
+                "summary": "Should show a placeholder instead of a broken image.",
+                "lastPublishedAt": "2026-10-19T12:00:00.000Z",
+                "readTime": 0
+              },
+              {
+                "id": "story-no-title",
+                "path": "/news/articles/edge-no-title",
+                "type": "article",
+                "summary": "No title, so this story must be skipped."
+              },
+              {
+                "id": "story-no-link",
+                "type": "article",
+                "title": "Edge story without any link must be skipped"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "collection",
+        "template": "illinois",
+        "model": {
+          "title": "Media",
+          "collection": { "id": "edge-media", "title": "Media" },
+          "contents": {
+            "data": [
+              {
+                "id": "story-video",
+                "path": "/news/videos/edge-video",
+                "type": "video",
+                "title": "Edge video clip",
+                "summary": "",
+                "indexImage": {
+                  "model": {
+                    "blocks": {
+                      "src": "https://ichef.bbci.co.uk/news/480/edge-video.jpg",
+                      "altText": "Alt text for the video"
+                    }
+                  }
+                },
+                "lastPublishedAt": "2026-10-21T11:59:30.000Z"
+              },
+              {
+                "id": "story-audio",
+                "path": "/sounds/play/edge-audio",
+                "type": "audio",
+                "title": "Edge audio clip with broken image",
+                "summary": "The image URL fails, so the card should fall back to a placeholder.",
+                "indexImage": {
+                  "model": {
+                    "blocks": {
+                      "src": "https://ichef.bbci.co.uk/news/480/broken-image.jpg",
+                      "altText": "This image will fail to load"
+                    }
+                  }
+                },
+                "lastPublishedAt": "2026-10-21T11:15:00.000Z"
+              },
+              {
+                "id": "story-article",
+                "path": "/news/articles/edge-article",
+                "type": "article",
+                "title": "Edge article with relative path",
+                "summary": "Duplicate of the first story; must only appear once."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "collection",
+        "template": "texas",
+        "model": {
+          "title": "Only duplicates",
+          "collection": { "id": "edge-only-dupes", "title": "Only duplicates" },
+          "contents": {
+            "data": [
+              {
+                "id": "story-video",
+                "path": "/news/videos/edge-video",
+                "type": "video",
+                "title": "Edge video clip"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "collection",
+        "template": "nevada",
+        "model": {
+          "title": "Empty section",
+          "collection": { "id": "edge-empty", "title": "Empty section" },
+          "contents": { "data": [] }
+        }
+      }
+    ]
+  }
+}
